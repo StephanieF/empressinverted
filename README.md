@@ -1,2 +1,2 @@
 # empressinverted
-Empress Inverted Nuxt/Vue site
+Empress Inverted site
