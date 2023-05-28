@@ -1,0 +1,4 @@
+name: empress
+recipe: lamp
+config:
+  webroot: .
