@@ -1,5 +1,17 @@
 {
+  "name": "app",
+  "version": "1.0.0",
+  "description": "empress",
+  "main": "scripts.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node scripts.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stephanie Fuda",
+  "license": "ISC",
   "dependencies": {
+    "gulp": "^4.0.2",
     "postcss": "^8.4.24"
   }
 }

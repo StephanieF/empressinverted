@@ -1,17 +1,14 @@
-// personalBrand();
-const synthwave = document.querySelector('.synthwave');
+const http = require('node:http');
 
-function updateRatios({ x, y, ...rest }) {
-  const { offsetWidth, offsetHeight } = synthwave;
+const hostname = '127.0.0.1';
+const port = 3000;
 
-  const centerX = offsetWidth / 2;
-  const centerY = offsetHeight / 2;
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Hello, World!\n');
+});
 
-  const ratioX = (centerX - x) / centerX;
-  const ratioY = (centerY - y) / centerY;
-
-  document.documentElement.style.setProperty('--ratio-x', ratioX);
-  document.documentElement.style.setProperty('--ratio-y', ratioY);
-}
-
-synthwave.addEventListener('mousemove', updateRatios, { passive: true })
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});
