@@ -12,6 +12,6 @@
   "license": "ISC",
   "dependencies": {
     "gulp": "^4.0.2",
-    "postcss": "^8.4.24"
+    "postcss": "^8.4.31"
   }
 }
